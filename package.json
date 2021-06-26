@@ -1,0 +1,10 @@
+{
+  "name": "zx-snippets",
+  "version": "1.0.1",
+  "description": "bash scripts written in zx",
+  "main": "index.js",
+  "repository": "https://github.com/marcpaul/zx-snippets.git",
+  "author": "marcpaul <marcpaul@users.noreply.github.com>",
+  "license": "MIT",
+  "private": false
+}
