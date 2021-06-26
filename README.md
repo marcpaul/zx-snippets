@@ -1,4 +1,4 @@
-# zx-snippets
+# zx-snippets 1.01
 
 Finally we can write bash scripts with javascript.
 
@@ -17,7 +17,14 @@ yarn global add zx
 
 Keep your node lts version up-to-date!
 Checks if there is a new version, installs it and sets it as default.
+After that it reinstalls all global packages from the old version.
 Maybe I will make this a little bit more flexible.
+
+### Updates
+
+1.01
+- **upgrade_node_lts.mjs** Add the question to delete old version
+- **upgrade_node_lts.mjs** Add question if you want to reinstall packages from old version
 
 ### Planned scripts
 

@@ -12,7 +12,21 @@ try {
     const currentNodeVersion = await defaultFile.toString().trim();
 
     if (latestNodeVersion !== currentNodeVersion) {
-        await $`source ${home}/.nvm/nvm.sh && nvm install ${latestNodeVersion} --reinstall-packages-from=${currentNodeVersion} && nvm alias default ${latestNodeVersion}`;
+        let reinstallPackages = await question(`do you want to reinstall global packages from ${currentNodeVersion} (Y/n)? `, {
+            choices: ['Y', 'n']
+        })
+        if (await reinstallPackages === 'n') {
+            await $`source ${home}/.nvm/nvm.sh && nvm install ${latestNodeVersion} && nvm alias default ${latestNodeVersion}`;
+        } else {
+            await $`source ${home}/.nvm/nvm.sh && nvm install ${latestNodeVersion} --reinstall-packages-from=${currentNodeVersion} && nvm alias default ${latestNodeVersion}`;
+        }
+        let deleteOldVersion = await question('do you want to delete old node version (y/N)? ', {
+            choices: ['y', 'N']
+        });
+
+        if (await deleteOldVersion === 'y') {
+            await $`source ${home}/.nvm/nvm.sh && nvm uninstall ${currentNodeVersion}`;
+        }
     } else {
         console.log(
             chalk.blue(
