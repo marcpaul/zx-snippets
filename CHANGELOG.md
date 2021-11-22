@@ -1,5 +1,7 @@
 ## Unreleased (2021-11-22)
 
+-   [master] fix create vm script, add changelog ([51fc325](https://github.com/marcpaul/zx-snippets/commit/51fc325))
+
 ## <small>1.0.3 (2021-11-22)</small>
 
 -   add create headless vm script ([4c4b3f8](https://github.com/marcpaul/zx-snippets/commit/4c4b3f8))
