@@ -1,4 +1,4 @@
-# zx-snippets 1.01
+# zx-snippets 1.03
 
 Finally we can write bash scripts with javascript.
 
@@ -24,13 +24,6 @@ Maybe I will make this a little bit more flexible.
 Create a new headless virtualbox virtual machine.
 Answer all the questions and vm is created. In the last question you can add
 all the additional parameters that were missing in the questions before.
-
-### Updates
-
-1.01
-
--   **upgrade_node_lts.mjs** Add the question to delete old version
--   **upgrade_node_lts.mjs** Add question if you want to reinstall packages from old version
 
 ### Planned scripts
 
