@@ -1,0 +1,72 @@
+[
+	{
+		"var": "vmName",
+		"question": "name for vm: ",
+		"choices": ""
+	},
+	{
+		"var": "osType",
+		"question": "ostype of vm: ",
+		"choices": ""
+	},
+	{
+		"var": "memSize",
+		"question": "memorysize of vm (in kb): ",
+		"choices": ""
+	},
+	{
+		"var": "hdName",
+		"question": "filename for hdd image: ",
+		"choices": ""
+	},
+	{
+		"var": "hdSize",
+		"question": "hddsize for virtual disk (in mb): ",
+		"choices": ""
+	},
+	{
+		"var": "storageController",
+		"question": "do you want to use ide or sata controller: ",
+		"choices": ["ide", "sata"]
+	},
+	{
+		"var": "isoImage",
+		"question": "path and filename of your iso image: ",
+		"choices": ""
+	},
+	{
+		"var": "vrde",
+		"question": "turn on vrde: ",
+		"choices": ["on", "off"]
+	},
+	{
+		"var": "audio",
+		"question": "turn on audio: ",
+		"choices": ["on", "off"]
+	},
+	{
+		"var": "cpus",
+		"question": "number of cpus: ",
+		"choices": ""
+	},
+	{
+		"var": "vram",
+		"question": "how much vram do you want to use (max. 256MB): ",
+		"choices": ""
+	},
+	{
+		"var": "sharedName",
+		"question": "name of shared folder (let empty to skip creating shared folder: ",
+		"choices": ""
+	},
+	{
+		"var": "sharedPath",
+		"question": "path to shared folder: ",
+		"choices": ""
+	},
+	{
+		"var": "automount",
+		"question": "do you want to automount shared folder: ",
+		"choices": ["yes", "no"]
+	}
+]

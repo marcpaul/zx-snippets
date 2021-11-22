@@ -5,5 +5,8 @@
   "repository": "https://github.com/marcpaul/zx-snippets.git",
   "author": "marcpaul <marcpaul@users.noreply.github.com>",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "scripts": {
+	  "start:create_vm": "zx create_headless_vm"
+  }
 }
